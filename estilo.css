@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Merriweather', serif;
+    position: relative;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 6.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.25rem 6.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: -2rem;
+    position: relative;
+    max-width: 10rem;
+}
+
+header ul {
+    margin-top:-1rem;
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color: black;
+    font-weight: 400;
+    margin-left: 2.5rem;
+    text-decoration: none;
+}
+
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textBx {
+    position: relative;
+    max-width: 37.5rem;
+}
+
+.content .textBx h2 {
+    color: black;
+    font-size: 3rem;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .textBx p {
+    color: black;  
+}
+
+.content .textBx a {
+    display: inline-block; 
+    margin-top: 1.25rem;
+    padding: 0.5rem 1.25rem;
+    background: #1b138b;
+    color: white;
+    border-radius: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 0.063rem;
+    text-decoration: none;
+}
+
+.content .imgBox {
+    width: 37.5rem;
+    display: flex;
+    justify-content: flex-end;
+    padding: 3.125rem;
+    margin-top: 3.125rem;
+}
+
+.content .imgBox img {
+    max-width: 21.25rem;
+}
+
+.thumb {
+    position: absolute;
+    left: 50%;
+    bottom: 1.25rem;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.thumb li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 1.25rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.thumb li:hover {
+    transform: translateY(-0.938rem);
+}
+
+.imaa {
+    width:5rem;
+    height:7rem;
+}
+
+.imaa2 {
+    width: 5rem;
+    height: 7rem;
+}
+
+.imaa3 {
+    width: 5rem;
+    height: 7rem;
+}
+
+.sci {
+    position: absolute;
+    top: 50%;
+    right: 1.875rem;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    margin: 0.313rem 0;
+    transform: scale(0.7);
+}
+
+.rss {
+    width: 4rem;
+    height: 3.5rem; 
+    margin-top: 1rem;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #d64894;
+    clip-path: circle(37.5rem at right 50rem);
+}
+
+.clipper {
+    width: 10rem;
+    height: 40vh;
+    margin-right: 10rem;
+}
+
+/* CATALOGO */
+
+.line {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    margin-left:4rem;
+    margin-top: 3rem;
+}
+
+.clipperbo {
+    width: 5rem;
+    height: 20vh;
+}
+
+.clipperbot {
+    width: 3rem;
+    height: 20vh;
+}
+
+/* ACERCA DE NOSOTROS */
+
+.first {
+    margin-top: 2rem;
+}
+
+.second {
+    margin-top: 1rem;
+}
+
+h1 {
+    margin-top: 2rem;
+}
+
+.canario {
+    width: 30rem;
+}
+
+/* Contacto */
+
+.content {
+    margin-top: 2rem;
+    display: flex;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+.content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .1);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+.contact-form {
+    background-color:#E6E6FA;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+    display: block;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1rem;
+}
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .3em;
+    border: none;
+    background: none;
+    outline: 0;
+    border-bottom: 1px solid #1b138b;
+}
+
+.contact-form form button {
+    background: #1b138b;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    color: white;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #d64894;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+.contact-info {
+    background: #D8BFD8;
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+/* NOVEDADES */
+
+.image {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.1);
+    height: 200px;
+    overflow: hidden;
+    margin: 15px auto;
+    position: relative;
+    width: 700px;
+    margin-left: 2rem;
+  }
+  
+  figure img {
+    border-radius: 5px;
+    height: 100%;
+    transition: all .23s ease;
+    width: 100%;
+  }
+  
+  .image figcaption {
+    color: black;
+    font-family: 'Exo';
+    height: 100%;
+    left: 0;
+    line-height: 250px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    transition: all .23s ease;
+    width: 100%;
+  }
+  
+  .image.fade figcaption {
+    opacity: 0;
+    visibility: hidden;
+    background: #d64894;
+    border-radius: 1rem;
+    color: white;
+  }
+  .image.push figcaption {
+    top: 0;
+    transform: translateY(250px);
+  }
+  
+  .image.push:hover > img {
+    transform: translateY(-250px);
+  }
+  
+  .image.push:hover > figcaption {
+    transform: translateY(0px);
+  }
+  
+  .image.fade:hover > img {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .image.fade:hover > figcaption {
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+#Buscador {
+    background: url(https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-19-32.png) no-repeat 0px 5px;
+    background-size: 24px;
+    width: 150px;
+    border: transparent;
+    border-bottom: solid 1px #ccc;
+    padding: 10px 10px 10px 30px;
+    outline: none;
+    margin-left: 4rem;
+    margin-top: -1rem;
+  }
+
+
+  .lang {
+      margin-top: -1rem;
+      margin-left: 3rem;
+  }

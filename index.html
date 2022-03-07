@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <title>Clipper</title>
+</head>
+<body>
+    <section>
+
+        <div class="circle"></div>
+
+        <header>
+            <a href="index.html"> <img src="img/logo.png" alt="" class="logo"> </a>
+            <ul>
+                <li> <a href="index.html">Menu</a> </li>
+                <li> <a href="catálogo.html">Catálogo</a> </li>
+                <li> <a href="novedades.html">Novedades</a> </li>
+                <li> <a href="contacto.html">Contacto</a> </li>
+                <li> <a href="aboutus.html">Sobre Nosotros</a> </li>
+            </ul>
+            <input type="search" placeholder="Buscar..." id="Buscador" class="sear" /> 
+
+            <select name="Seleccionar Idioma" class="lang">
+                <option value="value1">Inglés</option>
+                <option value="value2" selected>Español</option>
+              </select> 
+        </header>
+
+        <div class="content">
+            <div class="textBx">
+                <h2>El refresco de todos los canarios</h2>
+                <p>Más de 6 décadas como el refresco referencia de los canarios, <br> modernizándonos y adaptándonos a los nuevos tiempos.</p>
+                <a href="">Saber más</a>
+            </div>
+        </div>
+
+        <div class="imgBox">
+            <img src="img/fresa_lata.png" alt="" class="clipper">
+        </div>
+
+        <ul class="thumb">
+            <li> <img src="img/fresa_lata.png" onclick="imgSlider('img/fresa_lata.png');changeCircleColor('#d64894');" class="imaa">  </li>
+            <li> <img src="img/melonZero_lata.png" onclick="imgSlider('img/melonZero_lata.png');changeCircleColor('#09b550');" class="imaa2">  </li>
+            <li> <img src="img/naranja_lata.png" onclick="imgSlider('img/naranja_lata.png');changeCircleColor('#e3a438');" class="imaa3">  </li>
+        </ul>
+
+        <ul class="sci">
+            <li> <a href="https://www.facebook.com/RefrescoClipper/"> <img src="img/facebook.png" alt="" class="rss"></a> </li>
+            <li> <a href="https://twitter.com/RefrescoClipper"> <img src="img/twitter.png" alt="" class="rss"></a> </li>
+            <li> <a href="https://www.youtube.com/channel/UCIF3ygINtzUnkOYmB-NBSWg"> <img src="img/youtube.png" alt="" class="rss"></a> </li>
+            <li> <a href="https://www.instagram.com/ahembo.sl/"> <img src="img/instagram.png" alt="" class="rss"></a> </li>
+        </ul>
+
+        <script type="text/javascript">
+        
+            function imgSlider(anything) {
+                document.querySelector('.clipper').src = anything;
+            }
+
+            function changeCircleColor(color) {
+                const circle = document.querySelector('.circle');
+                circle.style.background = color;
+            }
+        
+        </script>
+
+    </section>
+</body>
+</html>
